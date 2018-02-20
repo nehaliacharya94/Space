@@ -15,7 +15,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.10.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -33,6 +33,23 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.atlassian.connect</groupId>
+			<artifactId>atlassian-connect-spring-boot-starter</artifactId>
+			<version>${atlassian-connect-spring-boot.version}</version>
+		</dependency>
+
+		<!-- Jetty Extensions To The Google OAuth Client Library For Java. -->
+		<!-- <dependency> <groupId>com.google.oauth-client</groupId> <artifactId>google-oauth-client-jetty</artifactId> 
+			<version>${google.oauth.client.version}</version> </dependency> -->
+
+		<!-- Google OAuth2 API V2 Rev124 1.22.0 -->
+		<!-- <dependency> <groupId>com.google.apis</groupId> <artifactId>google-api-services-oauth2</artifactId> 
+			<version>${google.oauth2.version}</version> </dependency> -->
+
+		<!-- Google Sheets API V4 Rev38 1.22.0 -->
+		<!-- <dependency> <groupId>com.google.apis</groupId> <artifactId>google-api-services-sheets</artifactId> 
+			<version>${google.sheets.version}</version> </dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -49,6 +66,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
 	</dependencies>
 
 	<build>
